@@ -20,8 +20,7 @@ def get_product_info(url):
 
 #--------------------Подключение к базе данных--------------------
 try:
-    conn = MySQLdb.connect(host="edvin9kc.beget.tech", user="edvin9kc_edvin",
-                           passwd="iopl87jkl", db="edvin9kc_edvin")#подключаемся к базе
+    from db import conn
     sql = "INSERT INTO video_cards (href, name, price) values (\"%s\", \"%s\", %s)";#создаём строковую переменную с кодом запроса, символ %s означает, что на это место мы потом будем подставлять переменную
 
     conn.set_character_set('utf8')#устанавливае кодировку utf-8 иначе не робит
