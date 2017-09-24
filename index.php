@@ -17,7 +17,7 @@ if ($conn->connect_error) {
 //if everything is fine
  
 //creating an array for storing the data 
-$viseo = array(); 
+$video = array(); 
  
 //this is our sql query 
 $sql = "SELECT id, href, name FROM video_cards;";
